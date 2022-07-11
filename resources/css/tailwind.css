@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    min-height: 100vh;
+}
+
+.btn {
+    @apply rounded-lg px-4 py-2;
+}
+.btn-blue {
+    @apply bg-blue-600 text-white;
+}
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.btn-red{
+    @apply bg-red-600 text-white;
+}
+
+.btn-red:hover {
+    @apply bg-red-700;
+}
+.panel{
+    @apply flex flex-row items-center;
+}
+.panel-btn{
+    @apply rounded-full bg-[#3E2723] text-white w-14 h-14 flex justify-center items-center relative hover:bg-[#1f1311] -mr-7;
+}
+.panel-animal{
+    @apply grid grid-flow-col auto-cols-max gap-1 bg-[#D7CCC8] rounded-r-lg pl-10 pr-3 py-1;
+}
+.panel-animal-avatar{
+    @apply box-border border-2 border-black bg-white rounded-full w-12 h-12 flex justify-center items-center;
+}
+.panel-animal-avatar img{
+    @apply w-7;
+}
+
+.animal-list{
+    @apply grid grid-cols-4 gap-4 justify-items-center items-center content-center;
+}
+.animal-list-item{
+    @apply text-center;
+}
+
+.animal-list-item-img{
+    @apply block mx-auto transition-all duration-500 mb-2;
+}
